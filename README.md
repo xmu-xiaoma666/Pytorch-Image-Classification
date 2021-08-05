@@ -48,6 +48,20 @@ ResNet18 训练代码
 python cifar_train.py --net ResNet
 ```
 
+## 模型测试
+
+单个模型测试
+```python
+python cifar_test.py --dataset CIFAR10 --net ResNet --weight_path saved_models/image_clasification_cifar10_ResNet_1234_best.pth
+```
+
+集成模型测试（手动修改代码中的weights_path数组）
+```python
+python cifar_test_ensemble.py --dataset CIFAR10 --net ResNet 
+```
+
+
+
 ---
 
 ## **机器学习/深度学习算法/计算机视觉/多模态交流群**
